@@ -11,7 +11,7 @@ Traductor de recetas medicas en el prospecto
   - ¿Puedes hablar con esas personas esta semana?
     - Podría hablar con ellos perfectamente 
 
-Rutina de gimnasio y reparto de comida semanal
+Rutina de gimnasio y reparto de comida semanal ahorrando dinero y no eligiendo siempre las mejores marcas
 **Preguntas**
   - ¿Que problema resuelve el producto?
     - Ayuda a nuevos miembros de gimnasio a tener una vida equilibrada y saludable
