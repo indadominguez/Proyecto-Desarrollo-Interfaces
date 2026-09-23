@@ -2,12 +2,12 @@
 
 BRAIN_STORM_IDEAS_PROYECTO
 
-Citas medicas personas mayores 
+Traductor de recetas medicas en el prospecto
 **Preguntas**
   - ¿Que problema resuelve el producto?
-    - Ayuda a las personas mayores a poder entender las nuevas tecnologías y sus variantes, así podrán entender poco a poco los cambios en su vida.
+    - Ayuda a las personas mayores a poder entender la letra de la medicina.
   - ¿Quien tiene ese problema en tu entorno?
-    - Ya sea mis tios, mis padres o las personas de centro de día de la residencia que todavía son independientes. 
+    - Casi la mayoría de personas de mi entorno tienen que ponerse las gafas para leer la letra.
   - ¿Puedes hablar con esas personas esta semana?
     - Podría hablar con ellos perfectamente 
 
