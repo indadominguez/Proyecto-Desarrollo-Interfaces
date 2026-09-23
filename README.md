@@ -11,12 +11,14 @@ Traductor de recetas medicas en el prospecto
   - ¿Puedes hablar con esas personas esta semana?
     - Podría hablar con ellos perfectamente 
 
-cadiz maps(recomendar planes en cádiz): Quiero con esta idea profundizar en el turismo real de cádiz y conocer de verdad la ciudad y no hacer los 4 planes típicos
+Rutina de gimnasio y reparto de comida semanal
 **Preguntas**
   - ¿Que problema resuelve el producto?
-    - Un problema de viajes, el turista que viene a Cádiz se deja llevar por lo primero que le dicen o buscan y no intenta conocer de verdad la ciudad con información de un ciudadano.
+    - Ayuda a nuevos miembros de gimnasio a tener una vida equilibrada y saludable
   - ¿Quien tiene ese problema en tu entorno?
+    - Mi grupo de amigos llevan muy poco tiempo y necesitan aprender 
   - ¿Puedes hablar con esas personas esta semana?
+    - Podría hablar con ellos perfectamente 
 
 Bibliofalla: Muchas veces letras de carnaval se pierden al solo ser visibles en algunos videos de youtubes y estos se borran o se pierdan, la idea es intentar recolectar TODAS las letras de carnaval desde 1960 en el concurso y calle y poner las posiciones de cada agrupación al final.
 **Preguntas**
