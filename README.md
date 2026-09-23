@@ -5,7 +5,7 @@ BRAIN_STORM_IDEAS_PROYECTO
 Traductor de recetas medicas en el prospecto
 **Preguntas**
   - ¿Que problema resuelve el producto?
-    - Ayuda a las personas mayores a poder entender la letra de la medicina.
+    - Ayuda a las personas mayores a poder entender la letra de los fármacos
   - ¿Quien tiene ese problema en tu entorno?
     - Casi la mayoría de personas de mi entorno tienen que ponerse las gafas para leer la letra.
   - ¿Puedes hablar con esas personas esta semana?
