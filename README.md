@@ -2,21 +2,12 @@
 
 BRAIN_STORM_IDEAS_PROYECTO
 
-Traductor de recetas medicas en el prospecto
+Ayuda nutricional semanal para ahorrar dinero y tener una dieta variada.
 **Preguntas**
   - ¿Que problema resuelve el producto?
-    - Ayuda a las personas mayores a poder entender la letra de los fármacos
+    - Ayuda a personas que quieren cuidar su salud a tener una vida equilibrada y saludable
   - ¿Quien tiene ese problema en tu entorno?
-    - Casi la mayoría de personas de mi entorno tienen que ponerse las gafas para leer la letra.
-  - ¿Puedes hablar con esas personas esta semana?
-    - Podría hablar con ellos perfectamente 
-
-Rutina de gimnasio y reparto de comida semanal ahorrando dinero y no eligiendo siempre las mejores marcas
-**Preguntas**
-  - ¿Que problema resuelve el producto?
-    - Ayuda a nuevos miembros de gimnasio a tener una vida equilibrada y saludable
-  - ¿Quien tiene ese problema en tu entorno?
-    - Mi grupo de amigos llevan muy poco tiempo y necesitan aprender 
+    - muy poco tiempo y necesitan aprender 
   - ¿Puedes hablar con esas personas esta semana?
     - Podría hablar con ellos perfectamente 
 
