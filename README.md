@@ -52,7 +52,7 @@ Quiero que la entrada sea sencilla y única, para luego poder profundizar parte 
 
 ### Ingredientes:   
 
-Se encarga de proporcionar ingredientes que el usuario no conozca para que pueda llevar un proceso de mejora alimentaria.  
+Se encarga de proporcionar ingredientes que el usuario no conozca para que le permita llevar un proceso de mejora alimentaria.  
 
 ### Recetas:   
 
