@@ -58,6 +58,6 @@ Se encarga de proporcionar ingredientes que el usuario no conozca para que le pe
 
 Con los nuevos ingredientes conocidos y también con los que ya conocía, en este apartado se intentará que el usuario conozca nuevas posibilidades y combinaciones de platos.
 
-### PRESUPUESTO:  
+### Presupuesto:  
 
 Muchas veces gastamos más de la cuenta en comida por no planificar que necesitamos en casa y que tenemos disponible, en este último apartado vamos a proporcionar al usuario el valor de nuestras recomendaciones y a descubrir como llevar a cabo nuestras sugerencias para que le ayuden a ahorrar lo previsto.
