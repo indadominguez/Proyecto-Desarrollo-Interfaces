@@ -47,12 +47,17 @@ Ayuda nutricional semanal para ahorrar dinero y tener una dieta variada.
 
 # Ideas diagrama de flujo
 
-Quiero que la entrada sea sencilla y única, para luego poder profundizar parte del proyecto, la página quiero que tenga 3 ramas **CLAVES** e **INAMOVIBLE**,
+Quiero que la entrada sea sencilla y única, para luego poder profundizar parte del proyecto, la página quiero que tenga 3 ramas **CLAVES** e **INAMOVIBLES**,
+"INGREDIENTES", "RECETAS" y "PRESUPUESTO", a partir de aquí el usuario podrá solucionar todos sus problemas y si lo necesita profundizar en cada una de las tres secciones.  
 
-"INGREDIENTES", "RECETAS" y "PRESUPUESTO", a partir de aquí el usuario podrá solucionar todos sus problemas y si lo necesita profundizar en cada una de las tres secciones.
+### Ingredientes:   
 
-### Ingredientes: Se encarga de proporcionar ingredientes que el usuario no conozca para que pueda llevar un proceso de mejora alimentaria.
+Se encarga de proporcionar ingredientes que el usuario no conozca para que pueda llevar un proceso de mejora alimentaria.  
 
-### Recetas: Con los nuevos ingredientes conocidos y también con los que ya conocía, en este apartado se intentará que el usuario conozca nuevas posibilidades y combinaciones de platos.
+### Recetas:   
 
-### PRESUPUESTO: Muchas veces gastamos más de la cuenta en comida por no planificar que necesitamos en casa y que tenemos disponible, en este último apartado vamos a proporcionar al usuario el valor de nuestras recomendaciones y a descubrir como llevar a cabo nuestras sugerencias para que le ayuden a ahorrar lo previsto.
+Con los nuevos ingredientes conocidos y también con los que ya conocía, en este apartado se intentará que el usuario conozca nuevas posibilidades y combinaciones de platos.
+
+### PRESUPUESTO:  
+
+Muchas veces gastamos más de la cuenta en comida por no planificar que necesitamos en casa y que tenemos disponible, en este último apartado vamos a proporcionar al usuario el valor de nuestras recomendaciones y a descubrir como llevar a cabo nuestras sugerencias para que le ayuden a ahorrar lo previsto.
