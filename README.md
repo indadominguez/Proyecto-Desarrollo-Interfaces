@@ -7,11 +7,11 @@ Toda esta parte del README se borrará cuando la idea quede clara
 Ayuda nutricional semanal para ahorrar dinero y tener una dieta variada.
 **Preguntas**
   - ¿Que problema resuelve el producto?
-    - Ayuda a personas que quieren cuidar su salud a tener una vida equilibrada y saludable
+    - Ayuda a personas que quieren cuidar su salud a tener una vida equilibrada y saludable.
   - ¿Quien tiene ese problema en tu entorno?
-    - muy poco tiempo y necesitan aprender 
+    - Actualmente lo tienen mi novia y mis padres, ya que tienen muy poco tiempo por culpa del trabajo y necesitan estabilidad y aprendizaje a la hora de poder hacer la compra o cocinar. 
   - ¿Puedes hablar con esas personas esta semana?
-    - Podría hablar con ellos perfectamente 
+    - Podría hablar con ellos perfectamente.
 
 # Preguntas 
 
