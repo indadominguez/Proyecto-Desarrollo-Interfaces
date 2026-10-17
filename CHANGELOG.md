@@ -3,6 +3,7 @@
 ## Brief de Proyecto
 
 ## VMP y User Flow
+Para tener una idea principal de mi MVP consulté géminis, para que me dijera que importancia le tenía que dar a las ideas que había tenido y cuales debería de implementar en la aplicación, dandome también ejemplos de que no hacía falta, porque me estaba costando mucho añadirle futuras funcionalidades.
 
 ## Sitemap
 
