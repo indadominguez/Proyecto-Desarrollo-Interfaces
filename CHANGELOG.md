@@ -12,5 +12,6 @@ Para tener una idea principal de mi MVP consulté géminis, para que me dijera q
 ## Prototipo Navegable
 
 ## Personas
+En esta sección del proyecto utilicé también geminis para que me diera algunas preguntas para hacerle a los usuarios, las preguntas están esto si, respondidas por los usuarios y no por la IA.
 
 ## 
