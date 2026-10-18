@@ -65,6 +65,25 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
   * Se adaptó el diagrama a un estilo visual más esquemático con cajas de colores.
 
 ## Wireframes
+### Maquetación de Wireframes Low-Fi (Desktop 1440x1024px y Mobile)
+
+- **Petición (Prompt):**  
+  > *"Aquí tienes la estructura de mis pantallas, quiero maquetar manualmente los wireframes de baja fidelidad en Figma para ordenador (Desktop 1440x1024px, rejilla de 12 columnas) y móvil."*  
+  > *"Quiero ver cómo queda la disposición en pantalla del inicio, recetas, ingredientes, ajustes y el footer adaptados a la persona principal [Irene Flores Castro]."*
+
+- **Respuesta de la IA:**  
+  * Explicación y guía paso a paso para la maquetación manual de baja fidelidad en Figma usando formas geométricas básicas (`F` para Frames, `R` para rectángulos, `L` para líneas en placeholders de imagen y `T` para textos).
+  * Estructuración del layout responsive desde el diseño móvil en 1 columna hasta la rejilla de 12 columnas en escritorio (1440x1024px).
+  * Definición visual y jerarquía de componentes para el **Inicio / Dashboard** (KPIs de ingredientes/recetas, selección de presupuesto y sugerencias diarias), **Ingredientes**, **Recetas**, **Ajustes** y un **Footer unificado** organizado en 4 columnas.
+
+- **Qué se conservó:**  
+  * El método de trabajo manual con un pequeño uso de plugins automáticos para adaptar cambios).
+  * La estructura visual estándar de las tarjetas en baja fidelidad (títulos, tiempos e ingredientes).
+  * La orientación del diseño a las necesidades de Irene Flores Castro (acceso rápido a comidas económicas y gestión ágil de ingredientes).
+
+- **Qué se cambió:**  
+  * Se adaptó la disposición visual de las pantallas al formato de escritorio (1440x1024px), redistribuyendo en horizontal a lo largo de las 12 columnas los bloques que en móvil estaban apilados verticalmente.
+  * Se estandarizó la estructura del pie de página (Footer) para dar coherencia a todas las vistas principales de la aplicación.
 
 ## Prototipo Navegable
 
