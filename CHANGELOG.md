@@ -4,7 +4,7 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
 ## Brief de Proyecto
 
 ## VMP y User Flow
-## Revisión y Optimización del VMP
+### Revisión y Optimización del VMP
 
 * **Petición (Prompt):**  
   > *"Aquí tienes mi MVP, intenta encontrar errores y ayudame a resolverlos."*  
@@ -25,7 +25,7 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
 
     ---
     
-Revisión y Optimización del User Flow
+### Revisión y Optimización del User Flow
 
 * **Petición (Prompt):**  
   > *"¿Cómo ves este user flow para un MVP y si añadirías algo más pero sin ser funcionalidades?"*  
@@ -43,6 +43,8 @@ Revisión y Optimización del User Flow
 * **Qué se cambió:**  
   * Se asignó el color blanco con borde a todas las pantallas (en lugar del color negro que se usaba por error en los rectángulos de interfaz).
 
+---
+
 ## Sitemap
 
 ## Wireframes
@@ -50,7 +52,7 @@ Revisión y Optimización del User Flow
 ## Prototipo Navegable
 
 ## Personas
-## Sesión - Construcción y Definición de Personas (Paso 4)
+### Construcción y Definición de Personas 
 
 * **Petición (Prompt):**  
   > *"¿Cómo ves estas perguntas para las personas que van a probar la aplicación?"*    
@@ -68,4 +70,4 @@ Revisión y Optimización del User Flow
 * **Qué se cambió:**  
   * Se reordenó la jerarquía del proyecto marcando explícitamente a Irene Flores Castro como la **Persona Principal** para que todas las decisiones de MVP, Sitemap y Wireframes se evaluaran bajo sus necesidades de velocidad y cero abrumamiento.
 
-## 
+
