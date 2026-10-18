@@ -35,5 +35,5 @@ Muchas veces gastamos más de la cuenta en comida por no planificar que necesita
 ## Enlaces del Proyecto
 
 
-* **Tablero de Investigación (FigJam):**[Ver en FigJam](https://www.figma.com/board/sDyY05oMEjxOaOQs8OXr30/Trabajo-de-Interfaces?node-id=0-1&t=oj3m08eEaNCB9LgS-1)
-* **Prototipo y Wireframes (Figma Design):**[Ver en Figma](https://www.figma.com/design/5AcSSM3jKv4TUPwEoboM2F/Plantilla-para-iniciar-proyectos--Community-?node-id=4-6&t=rndmoyf0faVmyDpo-1))
+* **Tablero de Investigación (FigJam):** [Ver en FigJam](https://www.figma.com/board/sDyY05oMEjxOaOQs8OXr30/Trabajo-de-Interfaces?node-id=0-1&t=oj3m08eEaNCB9LgS-1)
+* **Prototipo y Wireframes (Figma Design):** [Ver en Figma](https://www.figma.com/design/5AcSSM3jKv4TUPwEoboM2F/Plantilla-para-iniciar-proyectos--Community-?node-id=4-6&t=rndmoyf0faVmyDpo-1))
