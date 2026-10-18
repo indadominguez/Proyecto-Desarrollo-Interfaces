@@ -55,7 +55,7 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
 ### Construcción y Definición de Personas 
 
 * **Petición (Prompt):**  
-  > *"¿Cómo ves estas perguntas para las personas que van a probar la aplicación?"*    
+  > *"¿Cómo ves estas preguntas para las personas que van a probar la aplicación?"*    
   > *"Esta es mi persona principal [imagen de Irene Flores Castro, 22 años, Estudiante, Palma]"*
 
 * **Respuesta de la IA:**  
