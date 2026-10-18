@@ -50,6 +50,22 @@ Revisión y Optimización del User Flow
 ## Prototipo Navegable
 
 ## Personas
-En esta sección del proyecto utilicé también geminis para que me diera algunas preguntas para hacerle a los usuarios, las preguntas están esto si, respondidas por los usuarios y no por la IA.
+## Sesión - Construcción y Definición de Personas (Paso 4)
+
+* **Petición (Prompt):**  
+  > *"¿Cómo ves estas perguntas para las personas que van a probar la aplicación?"*    
+  > *"Esta es mi persona principal [imagen de Irene Flores Castro, 22 años, Estudiante, Palma]"*
+
+* **Respuesta de la IA:**  
+  * Adaptación y redacción de las preguntas de las entrevistas manteniendo un tono directo y coloquial.
+  * Análisis de los datos de la Persona Primaria (Irene Flores Castro, 22 años, estudiante) identificando sus objetivos inmediatos (reducir la improvisación y comer variado) y sus frustraciones principales (no abrumarse con cambios bruscos de hábitos ni perder tiempo decidiendo).
+  * Estructuración del perfil de usuario conectando el contexto de uso (dispositivo iPhone, conexión Wifi 4G, entorno salón de casa) con las decisiones de diseño del proyecto.
+
+* **Qué se conservó:**  
+  * Los datos reales extraídos de las entrevistas para ambas fichas: el perfil de Antonia para validar necesidades secundarias y el de Irene como eje central de la aplicación.
+  * La estructura de objetivos (Inmediato, De fondo, Oculto) y frustraciones (Filtrado, Claridad, Velocidad) presentes en el tablero de FigJam.
+
+* **Qué se cambió:**  
+  * Se reordenó la jerarquía del proyecto marcando explícitamente a Irene Flores Castro como la **Persona Principal** para que todas las decisiones de MVP, Sitemap y Wireframes se evaluaran bajo sus necesidades de velocidad y cero abrumamiento.
 
 ## 
