@@ -47,6 +47,22 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
 ---
 
 ## Sitemap
+### Definición y Estructuración del Sitemap
+
+- **Petición (Prompt):**  
+  > *Aquí tienes la estructura y contenido del Sitemap, encuentra errores y posibles soluciones de mejora."*  
+
+- **Respuesta de la IA:**  
+  * Propuesta de una arquitectura de información organizada en 3 niveles de navegación como máximo para mantener una estructura plana.
+  * Definición de pantallas de sistema (`Inicio de Sesión` con accesos a `Login` y `Registro`), una pantalla raíz principal (`Inicio / ¿Qué hacer hoy?`) y secciones secundarias para la barra inferior (`Ingredientes`, `Recetas`).
+  * Desglose de subpantallas y modales de acción, como el modal de *Información de Ingrediente* conectado con la vista de *Recetas*.
+
+- **Qué se conservó:**  
+  * La jerarquía en 3 niveles de profundidad para evitar la desorientación del usuario.
+
+- **Qué se cambió:**  
+  * Se unificó al 100% la nomenclatura del árbol con las etiquetas exactas utilizadas en los wireframes de Figma Design (`Inicio de Sesión`, `Inicio`, `Ingredientes`, `Recetas`).
+  * Se adaptó el diagrama a un estilo visual más esquemático con cajas de colores.
 
 ## Wireframes
 
