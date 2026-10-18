@@ -2,7 +2,29 @@
 Este documento registra las peticiones realizadas a asistentes de Inteligencia Artificial (Gemini) durante el desarrollo de la Órbita 1 del proyecto, detallando la consulta inicial, la respuesta obtenida, los elementos conservados y los cambios aplicados.
 
 ## Brief del Proyecto
-[Brief del Proyecto](BRIEF.md)
+### Redacción y Definición del Documento de Brief (BRIEF.md)
+
+- **Petición (Prompt):**  
+  > *"Qué crees que le falta al brief para poder ser un documento útil y que se pueda leer en 5 minutos con sus cinco elementos obligatorios (El Problema con datos, Alcance MVP, Personas, Criterios de Éxito y Restricciones, incluyendo la ambiental del W3C)."*  
+  > *"Verifica que la información del problema y de las personas es correcto y sale de las fichas de Irene y Antonia de mi FigJam."*
+
+- **Respuesta de la IA:**  
+  * Revisión completa del archivo `BRIEF.md` limitado a un tiempo de lectura de 5 minutos, integrando los datos cuantitativos y cualitativos recopilados en la investigación.
+  * Formalización del alcance del MVP basándose en las 4 funcionalidades clave validadas mediante el filtro de preguntas obligatorias (*Sugerencias/Filtro*, *Autenticación*, *Pedir/Guardar Receta* y *Ficha de Ingredientes Beneficiosos*).
+  * Inclusión de enlaces e identificación de roles para Irene Flores Castro (Persona Primaria) y Antonia Hita Acedo (Persona Secundaria).
+  * Definición de criterios de éxito cuantitativos y verificables en pruebas de usabilidad con la persona principal, junto con la regla de validación externa de los 5 minutos.
+  * Establecimiento de restricciones tecnológicas (coordinación DWEC/DWES, maquetación manual, grids), de tiempo, de usuario y de sostenibilidad ambiental (peso máximo de 1.5 MB por página según el Criterio 2.4 de las Web Sustainability Guidelines del W3C).
+
+- **Qué se conservó:**  
+  * Las citas textuales, contextos de uso, objetivos y frustraciones extraídos directamente de las fichas de investigación de Irene y Antonia del FigJam.
+  * Las 4 funcionalidades del MVP justificadas mediante las 3 preguntas obligatorias del módulo.
+  * El enfoque de sostenibilidad enfocado en usuarios con conexiones móviles o limitadas.
+
+- **Qué se cambió:**  
+  * Los testimonios y necesidades de Irene y Antonia tienen el 100% del peso(*"Decido sobre la marcha y al final siempre hago las mismas cuatro comidas"*, *"Tenemos en casa un calendario pero por falta de ingredientes no lo solemos usar bien"*).
+  * Se reorientaron los criterios de éxito para que sirvan directamente como guion de evaluación para las pruebas de usabilidad de la siguiente fase (Órbita 5).
+
+---
 
 ## VMP y User Flow
 ### Revisión y Optimización del VMP
