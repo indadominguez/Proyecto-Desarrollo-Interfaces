@@ -1,7 +1,8 @@
 # USO de IA en el Proyecto
 Este documento registra las peticiones realizadas a asistentes de Inteligencia Artificial (Gemini) durante el desarrollo de la Órbita 1 del proyecto, detallando la consulta inicial, la respuesta obtenida, los elementos conservados y los cambios aplicados.
 
-## Brief de Proyecto
+## Brief del Proyecto
+[Brief del Proyecto](BRIEF.md)
 
 ## VMP y User Flow
 ### Revisión y Optimización del VMP
