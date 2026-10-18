@@ -64,6 +64,8 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
   * Se unificó al 100% la nomenclatura del árbol con las etiquetas exactas utilizadas en los wireframes de Figma Design (`Inicio de Sesión`, `Inicio`, `Ingredientes`, `Recetas`).
   * Se adaptó el diagrama a un estilo visual más esquemático con cajas de colores.
 
+---
+
 ## Wireframes
 ### Maquetación de Wireframes Low-Fi (Desktop 1440x1024px y Mobile)
 
@@ -85,7 +87,7 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
   * Se adaptó la disposición visual de las pantallas al formato de escritorio (1440x1024px), redistribuyendo en horizontal a lo largo de las 12 columnas los bloques que en móvil estaban apilados verticalmente.
   * Se estandarizó la estructura del pie de página (Footer) para dar coherencia a todas las vistas principales de la aplicación.
 
-## Prototipo Navegable
+---
 
 ## Personas
 ### Construcción y Definición de Personas 
