@@ -109,6 +109,25 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
   * Se adaptó la disposición visual de las pantallas al formato de escritorio (1440x1024px), redistribuyendo en horizontal a lo largo de las 12 columnas los bloques que en móvil estaban apilados verticalmente.
   * Se estandarizó la estructura del pie de página (Footer) para dar coherencia a todas las vistas principales de la aplicación.
 
+### Wireframes editados con la herramienta stitch
+#### Inicio de Sesión
+- **Petición (Prompt):**  
+  > *"Quiero mejorar este wireframe de inicio de sesión con un diseño de baja fidelidad, sin color"*
+
+- **Respuesta de la IA:**  
+  * He mejorado el wireframe de inicio de sesión convirtiéndolo en un diseño estrictamente monocromático (sin color), optimizando la jerarquía visual y la usabilidad:.
+  * Mejoras clave implementadas: Identidad y Cabecera: Reemplazo del placeholder circular por un isotipo minimalista geométrico, acompañado de un saludo claro .
+  * Autenticación Rápida: Divisor sutil y accesos directos monocromáticos
+ 
+- **Qué se conservó:**  
+  * .
+  * .
+  * .
+
+- **Qué se cambió:**  
+  * .
+  * .
+
 ---
 
 ## Personas
