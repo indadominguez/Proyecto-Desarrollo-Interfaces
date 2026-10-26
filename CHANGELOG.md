@@ -2,7 +2,7 @@
 Este documento registra las peticiones realizadas a asistentes de Inteligencia Artificial (Gemini) durante el desarrollo de la Órbita 1 del proyecto, detallando la consulta inicial, la respuesta obtenida, los elementos conservados y los cambios aplicados.
 
 ## Brief del Proyecto
-### Redacción y Definición del Documento de Brief (BRIEF.md)
+### Redacción y Definición del Documento de Brief 
 
 - **Petición (Prompt):**  
   > *"Qué crees que le falta al brief para poder ser un documento útil y que se pueda leer en 5 minutos con sus cinco elementos obligatorios (El Problema con datos, Alcance MVP, Personas, Criterios de Éxito y Restricciones, incluyendo la ambiental del W3C)."*  
