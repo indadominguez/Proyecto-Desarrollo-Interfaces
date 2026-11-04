@@ -56,5 +56,5 @@ Todo el proceso de maquetación e iteración de wireframes (*Low-Fi*) ha sido lo
 
 * **Tablero de Investigación (FigJam):** [Ver en FigJam](https://www.figma.com/board/sDyY05oMEjxOaOQs8OXr30/Trabajo-de-Interfaces?node-id=0-1&t=oj3m08eEaNCB9LgS-1)
 * **Prototipo y Wireframes (Figma Design):** [Ver en Figma](https://www.figma.com/design/5AcSSM3jKv4TUPwEoboM2F/Plantilla-para-iniciar-proyectos--Community-?node-id=4-6&t=rndmoyf0faVmyDpo-1))
-* **BRIEF.md:**[BRIEF.md](https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces/blob/main/BRIEF.md)
-* **ORBITA2.md**[ORBITA2.md](https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces/blob/main/ORBITA2.md)
+* [**BRIEF.md**](https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces/blob/main/BRIEF.md)
+* [**ORBITA2.md**](https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces/blob/main/ORBITA2.md)
