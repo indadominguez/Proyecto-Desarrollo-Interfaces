@@ -109,25 +109,22 @@ Este documento registra las peticiones realizadas a asistentes de Inteligencia A
   * Se adaptó la disposición visual de las pantallas al formato de escritorio (1440x1024px), redistribuyendo en horizontal a lo largo de las 12 columnas los bloques que en móvil estaban apilados verticalmente.
   * Se estandarizó la estructura del pie de página (Footer) para dar coherencia a todas las vistas principales de la aplicación.
 
+---
+
 ### Wireframes editados con la herramienta stitch
 #### Inicio de Sesión
 - **Petición (Prompt):**  
-  > *"Quiero mejorar este wireframe de inicio de sesión con un diseño de baja fidelidad, sin color"*
+  > *"Para el rediseño de los wireframes he utilizado la herramienta stitch para intentar darle a la página un poco más de sentido y llamatismo, la idea principal sigue siendo la mía y la mejora de stitch solo ha sido para coger ideas pero nada más, porque la herramienta hace wireframes demasiado complejos y es complicado darle el 100% del contexto."*
 
 - **Respuesta de la IA:**  
   * He mejorado el wireframe de inicio de sesión convirtiéndolo en un diseño estrictamente monocromático (sin color), optimizando la jerarquía visual y la usabilidad:.
   * Mejoras clave implementadas: Identidad y Cabecera: Reemplazo del placeholder circular por un isotipo minimalista geométrico, acompañado de un saludo claro .
   * Autenticación Rápida: Divisor sutil y accesos directos monocromáticos
  
-- **Qué se conservó:**  
-  * .
-  * .
-  * .
-
-- **Qué se cambió:**  
-  * .
-  * .
-
+- **Qué se conservó:** y **Qué se cambió:**
+  * He decidio juntar los dos puntos porque del diseño de stitch no se ha conservado nada más que no sea la idea de agrandar más el espacio y utilizar mucho más la amplitud de la página pero por lo demás sigue siendo la misma idea de antes, abajo dejo el enlace de la conversación con stitch
+  * [Conversacion stitch](https://stitch.withgoogle.com/projects/16063488677430729965) 
+    
 ---
 
 ## Personas
