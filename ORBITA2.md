@@ -4,7 +4,7 @@
 
 | Qué | Enlace |
 |---|---|
-| Archivo de Figma (versión "Entrega Órbita 2") | |
+| Archivo de Figma (versión "Entrega Órbita 2") | [Enlace](https://www.figma.com/design/5AcSSM3jKv4TUPwEoboM2F/Plantilla-para-iniciar-proyectos--Community-?node-id=1-25&t=5AUGClEsD4Zq1GDb-1)|
 | Prototipo (enlace que empieza por `figma.com/proto/`) | |
 | Proyecto de Google Stitch (solo si lo has usado) | [Conversacion stitch](https://stitch.withgoogle.com/projects/16063488677430729965)|
 
@@ -13,7 +13,7 @@
 | Entregable | Página y sección del archivo |
 |---|---|
 | Inventario de decisiones | |
-| Wireframes rediseñados con sus notas | |
+| Wireframes rediseñados con sus notas | Wireframes rediseñados |
 | Componentes | |
 | Mockups del happy path | |
 | Pantalla principal en el segundo ancho | |
