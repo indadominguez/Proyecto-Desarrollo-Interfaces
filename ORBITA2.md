@@ -6,7 +6,7 @@
 |---|---|
 | Archivo de Figma (versión "Entrega Órbita 2") | |
 | Prototipo (enlace que empieza por `figma.com/proto/`) | |
-| Proyecto de Google Stitch (solo si lo has usado) | |
+| Proyecto de Google Stitch (solo si lo has usado) | [Conversacion stitch](https://stitch.withgoogle.com/projects/16063488677430729965)|
 
 ## Dónde está cada cosa en Figma
 
