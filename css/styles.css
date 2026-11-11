@@ -1,0 +1,69 @@
+/* Estilos de prueba para la barra lateral */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #f7f7f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    border-right: 1px solid #e5e5e7;
+}
+
+.sidebar-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 24px;
+}
+
+.sidebar-menu {
+    list-style: none; /* ¡Adiós puntos negros! */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px 12px;
+    color: #333;
+    text-decoration: none; /* ¡Adiós subrayado! */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.sidebar-link:hover {
+    background-color: #ececee;
+}
+
+/* Para simular la opción seleccionada de la captura ("Inicio") */
+.sidebar-link.active {
+    background-color: #e4e4e7;
+    font-weight: 500;
+}
+
+.sidebar-footer {
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e5e7;
+    padding-top: 16px;
+}
+
+.sidebar-footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
