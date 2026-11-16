@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-desarrollo-interfaces",
+  "version": "1.0.0",
+  "description": "> Aplicación web orientada a simplificar la toma de decisiones diarias sobre comidas y cenas, optimizando la planificación y la variedad nutricional sin exigencias complejas en la cocina.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces/issues"
+  },
+  "homepage": "https://github.com/indadominguez/Proyecto-Desarrollo-Interfaces#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
+  }
+}
