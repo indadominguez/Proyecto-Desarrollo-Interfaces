@@ -3,97 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qué cocinamos hoy</title>
+    <title>Recetas · EatBens</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="recetas">
 
     <header class="sidebar">
-        <div class="sidebar-brand">
-            <span>EatBens</span>
-        </div>
+        <p class="sidebar-brand">EatBens</p>
 
         <nav class="sidebar-nav" aria-label="Navegación principal">
             <ul class="sidebar-menu">
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio sesion</a></li>
                 <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
                 <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
+                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <header>
-            <h1></h1>
-            <p></p>
+    <main class="main-content catalogo">
+        <header class="page-header">
+            <hgroup>
+                <h1>Recetas</h1>
+                <p>Explora el catálogo y consulta el tiempo, el coste y los ingredientes de cada plato.</p>
+            </hgroup>
         </header>
-        <section>
+
+        <section class="listing" aria-labelledby="titulo-listado-recetas">
             <header>
-                <h2></h2>
-                <menu>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                </menu>
+                <h2 id="titulo-listado-recetas">Catálogo de recetas</h2>
+                <p>Pulsa una receta para ver su ficha completa.</p>
             </header>
-            <p></p>
+
+            <ul class="card-grid" id="listado-recetas"></ul>
         </section>
-        <section>
-            <article>
-                <figure><img src="" alt=""></figure>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <menu>
-                    <li><button></button></li>
-                    <li><a href=""></a></li>
-                </menu>
-            </article>
-            <aside>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <a href=""></a>
-                </section>
-                <section>
-                    <h3></h3>
-                    <ul>
-                        <li>
-                            <hgroup>
-                                <h4></h4>
-                                <p></p>
-                            </hgroup>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <hgroup>
-                                <h4></h4>
-                                <p></p>
-                            </hgroup>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <hgroup>
-                                <h4></h4>
-                                <p></p>
-                            </hgroup>
-                            <a href=""></a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <a href=""></a>
-                </section>
-            </aside>
-        </section>
+
+        <aside
+            class="detail-panel"
+            id="detalle-receta"
+            tabindex="-1"
+            aria-labelledby="titulo-detalle-receta"
+            aria-live="polite"
+        >
+            <header>
+                <p class="detalle__eyebrow">Detalle</p>
+                <h2 class="detalle__titulo" id="titulo-detalle-receta">Ficha de la receta</h2>
+            </header>
+            <p>Selecciona una receta del catálogo para consultar sus datos y los ingredientes que necesitas.</p>
+        </aside>
     </main>
 
     <footer class="sidebar-footer">
-        <span>Irene Flores</span>
-        <a href="#">Ajustes</a>
+        <p>Irene Flores</p>
+        <p><a href="#">Ajustes</a></p>
     </footer>
 
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

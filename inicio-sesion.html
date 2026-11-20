@@ -3,34 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qué cocinamos hoy</title>
+    <title>Inicio de sesión · EatBens</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="inicio-sesion">
 
     <header class="sidebar">
-        <div class="sidebar-brand">
-            <span>EatBens</span>
-        </div>
+        <p class="sidebar-brand">EatBens</p>
 
         <nav class="sidebar-nav" aria-label="Navegación principal">
             <ul class="sidebar-menu">
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio sesion</a></li>
                 <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
                 <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
+                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-content">
-        <!-- Aquí dentro va el Emmet de la pantalla principal -->
+        <header class="page-header">
+            <hgroup>
+                <h1>Inicio de sesión</h1>
+                <p>Accede a tu cuenta para guardar recetas y sincronizar tu planificación.</p>
+            </hgroup>
+        </header>
+
+        <section class="panel" aria-labelledby="titulo-formulario-acceso">
+            <h2 id="titulo-formulario-acceso">Formulario de acceso</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de acceso</legend>
+                    <p>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="contrasena">Contraseña</label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </p>
+                </fieldset>
+                <p><button type="submit">Entrar</button></p>
+            </form>
+            <p>
+                El formulario ya tiene la estructura semántica; la conexión con el sistema de acceso
+                se implementará en la siguiente fase.
+            </p>
+        </section>
     </main>
 
     <footer class="sidebar-footer">
-        <span>Irene Flores</span>
-        <a href="#">Ajustes</a>
+        <p>Irene Flores</p>
+        <p><a href="#">Ajustes</a></p>
     </footer>
 
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

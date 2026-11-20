@@ -129,3 +129,351 @@ body {
 .sidebar-footer a:hover {
     text-decoration: underline;
 }
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+   ========================================= */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    margin-bottom: 0.35rem;
+    line-height: 1.25;
+}
+
+.main-content h1 {
+    font-size: 1.75rem;
+}
+
+.main-content h2 {
+    font-size: 1.25rem;
+}
+
+.main-content h3 {
+    font-size: 1rem;
+}
+
+.main-content p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.main-content ul {
+    padding-left: 1.25rem;
+}
+
+/* Enlaces del contenido: mismo color que el texto, subrayado discreto */
+.main-content a {
+    color: var(--text-primary);
+    text-decoration-color: var(--text-muted);
+    text-underline-offset: 0.15em;
+}
+
+.main-content a:hover {
+    text-decoration-color: var(--text-primary);
+}
+
+.main-content a:focus-visible {
+    outline: 0.125rem solid var(--text-primary);
+    outline-offset: 0.125rem;
+}
+
+.catalogo .page-header {
+    margin-bottom: 1.5rem;
+}
+
+.page-header p,
+.listing header p {
+    color: var(--text-muted);
+}
+
+/* Separación entre las secciones de Inicio y del formulario */
+.main-content:not(.catalogo) > * + * {
+    margin-top: 1.5rem;
+}
+
+.main-content:not(.catalogo) aside section + section {
+    margin-top: 1rem;
+}
+
+/* =========================================
+   CATÁLOGO: LISTADO + DETALLE
+   ========================================= */
+.catalogo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.catalogo .page-header {
+    grid-column: 1 / -1;
+}
+
+.listing {
+    min-width: 0;
+}
+
+.listing > header {
+    margin-bottom: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    padding: 1rem;
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.tarjeta:hover {
+    background-color: var(--hover-bg);
+}
+
+.tarjeta--activa {
+    border-color: var(--text-primary);
+    background-color: var(--active-bg);
+}
+
+.tarjeta header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.tarjeta h3,
+.tarjeta p {
+    margin: 0;
+}
+
+.tarjeta h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.tarjeta h3 a:focus-visible {
+    outline: 0.125rem solid var(--text-primary);
+    outline-offset: 0.125rem;
+}
+
+.tarjeta__precio {
+    font-weight: 600;
+}
+
+.tarjeta__precio,
+.etiqueta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.tarjeta__etiquetas,
+.detalle__etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* =========================================
+   PANEL DE DETALLE
+   ========================================= */
+.detail-panel {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    padding: 1rem;
+    overflow-y: auto;
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: #ffffff;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.detalle p,
+.detalle dl,
+.detalle ul,
+.detalle h2,
+.detalle h3 {
+    margin: 0;
+}
+
+.detalle__eyebrow {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.detalle__datos,
+.macros {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1rem;
+}
+
+.detalle__datos dt,
+.macros dt {
+    font-weight: 600;
+}
+
+.detalle__datos dd,
+.macros dd {
+    margin: 0;
+    text-align: right;
+}
+
+.detalle__seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detalle__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0;
+    list-style: none;
+}
+
+.detalle__lista a {
+    color: var(--text-primary);
+}
+
+.detalle__nota {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* =========================================
+   FORMULARIO DE ACCESO
+   ========================================= */
+.panel {
+    max-width: 32rem;
+    padding: 1.5rem;
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: #ffffff;
+}
+
+.panel form {
+    margin-top: 1rem;
+}
+
+.panel fieldset {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0;
+    border: 0;
+}
+
+.panel legend {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.panel form p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0;
+}
+
+.panel input {
+    padding: 0.5rem;
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font: inherit;
+}
+
+.panel button {
+    margin-top: 0.75rem;
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+button {
+    padding: 0.4rem 0.75rem;
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: #ffffff;
+    color: var(--text-primary);
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover-bg);
+}
+
+button:focus-visible {
+    outline: 0.125rem solid var(--text-primary);
+    outline-offset: 0.125rem;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 64rem) {
+    .catalogo {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .detail-panel {
+        position: static;
+        max-height: none;
+    }
+}
+
+@media (max-width: 48rem) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "sidebar-top"
+            "main"
+            "sidebar-bottom";
+    }
+
+    .sidebar {
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 0.0625rem solid var(--border-color);
+    }
+
+    .sidebar-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-footer {
+        border-right: none;
+    }
+
+    .main-content {
+        padding: 1.25rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
