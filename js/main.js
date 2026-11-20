@@ -119,3 +119,4 @@ function iniciarPagina() {
         pintarRecetas(recetas);
     }
 }
+

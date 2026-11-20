@@ -87,7 +87,14 @@ function crearDetalleReceta(receta, listaIngredientes) {
             const encontrado = listaIngredientes.find((ing) => String(ing.id) === String(idBuscado));
 
             const li = document.createElement("li");
-            li.textContent = encontrado ? encontrado.nombre : `Ingrediente #${idBuscado}`;
+            if (encontrado) {
+                const enlace = document.createElement("a");
+                enlace.href = `ingredientes.html#ingrediente-${encontrado.id}`;
+                enlace.textContent = encontrado.nombre;
+                li.append(enlace);
+            } else {
+                li.textContent = `Ingrediente #${idBuscado}`;
+            }
             lista.append(li);
         });
     }
