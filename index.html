@@ -3,34 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qué cocinamos hoy</title>
+    <title>Inicio · EatBens</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="inicio">
 
     <header class="sidebar">
-        <div class="sidebar-brand">
-            <span>EatBens</span>
-        </div>
+        <p class="sidebar-brand">EatBens</p>
 
         <nav class="sidebar-nav" aria-label="Navegación principal">
             <ul class="sidebar-menu">
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio sesion</a></li>
                 <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
                 <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
+                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-content">
-        <!-- Aquí dentro va el Emmet de la pantalla principal -->
+        <header class="page-header">
+            <hgroup>
+                <h1>¿Qué cocinamos hoy?</h1>
+                <p>Elige cuánto quieres gastar y te proponemos una receta.</p>
+            </hgroup>
+        </header>
+
+        <section aria-labelledby="titulo-presupuesto">
+            <h2 id="titulo-presupuesto">Presupuesto por ración</h2>
+            <ul>
+                <li><button type="button" aria-pressed="true">Sin límite</button></li>
+                <li><button type="button" aria-pressed="false">Ahorro: hasta 1,50 €</button></li>
+            </ul>
+            <p>Te quedan 12,50 € hoy para 3 comidas.</p>
+        </section>
+
+        <article aria-labelledby="titulo-receta-destacada">
+            <figure>
+                <figcaption>Imagen de la receta</figcaption>
+            </figure>
+            <h2 id="titulo-receta-destacada">Pasta carbonara económica con verduras</h2>
+            <p>15 min · 380 kcal por ración · Dificultad baja · 1,20 € por ración</p>
+            <p>Tienes los 3 ingredientes que necesitas.</p>
+            <p>
+                <button type="button">Cocinar ahora</button>
+                <a href="recetas.html#receta-1">Ver receta</a>
+            </p>
+        </article>
+
+        <aside aria-labelledby="titulo-semana">
+            <section>
+                <h2 id="titulo-semana">Esta semana</h2>
+                <p>Semana 42 · 14 raciones programadas</p>
+                <p><button type="button">Ver plan semanal</button></p>
+            </section>
+
+            <section aria-labelledby="titulo-sugerencias">
+                <h2 id="titulo-sugerencias">Otras sugerencias</h2>
+                <ul>
+                    <li>
+                        <hgroup>
+                            <h3>Desayuno rápido</h3>
+                            <p>10–15 min · 0,90 € por ración</p>
+                        </hgroup>
+                        <a href="recetas.html">Ver receta</a>
+                    </li>
+                    <li>
+                        <hgroup>
+                            <h3>Plato equilibrado</h3>
+                            <p>20 min · 1,30 € por ración</p>
+                        </hgroup>
+                        <a href="recetas.html">Ver receta</a>
+                    </li>
+                    <li>
+                        <hgroup>
+                            <h3>Cena reconfortante</h3>
+                            <p>25 min · 1,10 € por ración</p>
+                        </hgroup>
+                        <a href="recetas.html">Ver receta</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="titulo-despensa">
+                <h2 id="titulo-despensa">Tu despensa</h2>
+                <p>3 ingredientes caducan en 48 h.</p>
+                <p><a href="ingredientes.html">Ver ingredientes</a></p>
+            </section>
+        </aside>
     </main>
 
     <footer class="sidebar-footer">
-        <span>Irene Flores</span>
-        <a href="#">Ajustes</a>
+        <p>Irene Flores</p>
+        <p><a href="#">Ajustes</a></p>
     </footer>
 
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

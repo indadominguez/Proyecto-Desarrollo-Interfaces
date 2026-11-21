@@ -3,34 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qué cocinamos hoy</title>
+    <title>Ingredientes · EatBens</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="ingredientes">
 
     <header class="sidebar">
-        <div class="sidebar-brand">
-            <span>EatBens</span>
-        </div>
+        <p class="sidebar-brand">EatBens</p>
 
         <nav class="sidebar-nav" aria-label="Navegación principal">
             <ul class="sidebar-menu">
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio sesion</a></li>
                 <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
                 <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
+                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
-        <!-- Aquí dentro va el Emmet de la pantalla principal -->
+    <main class="main-content catalogo">
+        <header class="page-header">
+            <hgroup>
+                <h1>Ingredientes</h1>
+                <p>Consulta el stock de tu despensa y la información nutricional de cada alimento.</p>
+            </hgroup>
+        </header>
+
+        <section class="listing" aria-labelledby="titulo-listado-ingredientes">
+            <header>
+                <h2 id="titulo-listado-ingredientes">Tu despensa</h2>
+                <p>Pulsa un ingrediente para ver su ficha completa.</p>
+            </header>
+
+            <ul class="card-grid" id="listado-ingredientes"></ul>
+        </section>
+
+        <aside
+            class="detail-panel"
+            id="detalle-ingrediente"
+            tabindex="-1"
+            aria-labelledby="titulo-detalle-ingrediente"
+            aria-live="polite"
+        >
+            <header>
+                <p class="detalle__eyebrow">Detalle</p>
+                <h2 class="detalle__titulo" id="titulo-detalle-ingrediente">Ficha del ingrediente</h2>
+            </header>
+            <p>Selecciona un ingrediente del listado para consultar sus macronutrientes y las recetas que lo utilizan.</p>
+        </aside>
     </main>
 
     <footer class="sidebar-footer">
-        <span>Irene Flores</span>
-        <a href="#">Ajustes</a>
+        <p>Irene Flores</p>
+        <p><a href="#">Ajustes</a></p>
     </footer>
 
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
