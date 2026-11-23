@@ -13,7 +13,7 @@ const listadoIngredientes = document.querySelector("#listado-ingredientes");
 const listadoRecetas = document.querySelector("#listado-recetas");
 const detalleIngrediente = document.querySelector("#detalle-ingrediente");
 const detalleReceta = document.querySelector("#detalle-receta");
-const enlacesMenu = document.querySelectorAll(".sidebar-link");
+const enlacesMenu = document.querySelectorAll(".barra-lateral__enlace");
 
 // Listeners
 document.addEventListener("DOMContentLoaded", () => {
@@ -67,7 +67,7 @@ function pintarRecetas(lista) {
 
 function pintarDetalle(contenedor, nodoDetalle) {
     if (!contenedor) return;
-    const fichaAnterior = contenedor.querySelector(".ficha-detalle");
+    const fichaAnterior = contenedor.querySelector(".detalle");
     if (fichaAnterior) {
         fichaAnterior.remove();
     }
@@ -79,7 +79,7 @@ function marcarTarjetaActiva(contenedor, id) {
     if (!contenedor) return;
     const tarjetas = contenedor.querySelectorAll(".tarjeta");
     tarjetas.forEach((tarjeta) => {
-        tarjeta.classList.toggle("activa", String(tarjeta.dataset.id) === String(id));
+        tarjeta.classList.toggle("tarjeta--activa", String(tarjeta.dataset.id) === String(id));
     });
 }
 
@@ -104,8 +104,7 @@ function marcarMenu() {
 
     enlacesMenu.forEach((enlace) => {
         if (enlace.getAttribute("href") === archivo) {
-            enlace.classList.add("active");
-            enlace.setAttribute("aria-current", "page");
+            enlace.classList.add("barra-lateral__enlace--activo");
         }
     });
 }
