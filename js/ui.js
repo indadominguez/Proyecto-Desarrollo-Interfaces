@@ -38,7 +38,7 @@ function crearTarjetaReceta(receta) {
 
 function crearDetalleIngrediente(ingrediente) {
     const contenedor = document.createElement("article");
-    contenedor.classList.add("ficha-detalle");
+    contenedor.classList.add("detalle");
 
     const titulo = document.createElement("h2");
     titulo.textContent = ingrediente.nombre;
@@ -61,7 +61,7 @@ function crearDetalleIngrediente(ingrediente) {
 
 function crearDetalleReceta(receta, listaIngredientes) {
     const contenedor = document.createElement("article");
-    contenedor.classList.add("ficha-detalle");
+    contenedor.classList.add("detalle");
 
     const titulo = document.createElement("h2");
     titulo.textContent = receta.titulo;

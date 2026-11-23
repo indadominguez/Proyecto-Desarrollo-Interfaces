@@ -8,94 +8,86 @@
 </head>
 <body data-page="inicio">
 
-    <header class="sidebar">
-        <p class="sidebar-brand">EatBens</p>
+    <header class="barra-lateral">
+        <p class="barra-lateral__marca">EatBens</p>
 
-        <nav class="sidebar-nav" aria-label="Navegación principal">
-            <ul class="sidebar-menu">
-                <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
+        <nav class="barra-lateral__navegacion" aria-label="Navegación principal">
+            <ul class="barra-lateral__menu">
+                <li><a href="index.html" class="barra-lateral__enlace">Inicio</a></li>
+                <li><a href="ingredientes.html" class="barra-lateral__enlace">Ingredientes</a></li>
+                <li><a href="recetas.html" class="barra-lateral__enlace">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="barra-lateral__enlace">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
-        <header class="page-header">
-            <hgroup>
-                <h1>¿Qué cocinamos hoy?</h1>
-                <p>Elige cuánto quieres gastar y te proponemos una receta.</p>
-            </hgroup>
+    <main class="contenido-principal">
+        <header class="cabecera-pagina">
+            <h1 class="cabecera-pagina__titulo">¿Qué cocinamos hoy?</h1>
+            <p class="cabecera-pagina__subtitulo">Elige cuánto quieres gastar y te proponemos una receta.</p>
         </header>
 
-        <section aria-labelledby="titulo-presupuesto">
-            <h2 id="titulo-presupuesto">Presupuesto por ración</h2>
-            <ul>
-                <li><button type="button" aria-pressed="true">Sin límite</button></li>
-                <li><button type="button" aria-pressed="false">Ahorro: hasta 1,50 €</button></li>
+        <section class="presupuesto">
+            <h2 class="presupuesto__titulo">Presupuesto por ración</h2>
+            <ul class="presupuesto__opciones">
+                <li><button type="button">Sin límite</button></li>
+                <li><button type="button">Ahorro: hasta 1,50 €</button></li>
             </ul>
-            <p>Te quedan 12,50 € hoy para 3 comidas.</p>
+            <p class="presupuesto__estado">Te quedan 12,50 € hoy para 3 comidas.</p>
         </section>
 
-        <article aria-labelledby="titulo-receta-destacada">
-            <figure>
-                <figcaption>Imagen de la receta</figcaption>
+        <article class="receta-destacada">
+            <figure class="receta-destacada__figura">
+                <figcaption class="receta-destacada__leyenda">Imagen de la receta</figcaption>
             </figure>
-            <h2 id="titulo-receta-destacada">Pasta carbonara económica con verduras</h2>
-            <p>15 min · 380 kcal por ración · Dificultad baja · 1,20 € por ración</p>
-            <p>Tienes los 3 ingredientes que necesitas.</p>
-            <p>
+            <h2 class="receta-destacada__titulo">Pasta carbonara económica con verduras</h2>
+            <p class="receta-destacada__datos">15 min · 380 kcal por ración · Dificultad baja · 1,20 € por ración</p>
+            <p class="receta-destacada__disponibilidad">Tienes los 3 ingredientes que necesitas.</p>
+            <p class="receta-destacada__acciones">
                 <button type="button">Cocinar ahora</button>
-                <a href="recetas.html#receta-1">Ver receta</a>
+                <a class="receta-destacada__enlace" href="recetas.html#receta-1">Ver receta</a>
             </p>
         </article>
 
-        <aside aria-labelledby="titulo-semana">
-            <section>
-                <h2 id="titulo-semana">Esta semana</h2>
-                <p>Semana 42 · 14 raciones programadas</p>
-                <p><button type="button">Ver plan semanal</button></p>
+        <div class="contenido-complementario">
+            <section class="resumen-semana">
+                <h2 class="resumen-semana__titulo">Esta semana</h2>
+                <p class="resumen-semana__datos">Semana 42 · 14 raciones programadas</p>
+                <p class="resumen-semana__acciones"><button type="button">Ver plan semanal</button></p>
             </section>
 
-            <section aria-labelledby="titulo-sugerencias">
-                <h2 id="titulo-sugerencias">Otras sugerencias</h2>
-                <ul>
-                    <li>
-                        <hgroup>
-                            <h3>Desayuno rápido</h3>
-                            <p>10–15 min · 0,90 € por ración</p>
-                        </hgroup>
-                        <a href="recetas.html">Ver receta</a>
+            <section class="sugerencias">
+                <h2 class="sugerencias__titulo">Otras sugerencias</h2>
+                <ul class="sugerencias__lista">
+                    <li class="sugerencias__elemento">
+                        <h3 class="sugerencias__nombre">Desayuno rápido</h3>
+                        <p class="sugerencias__datos">10–15 min · 0,90 € por ración</p>
+                        <a class="sugerencias__enlace" href="recetas.html">Ver receta</a>
                     </li>
-                    <li>
-                        <hgroup>
-                            <h3>Plato equilibrado</h3>
-                            <p>20 min · 1,30 € por ración</p>
-                        </hgroup>
-                        <a href="recetas.html">Ver receta</a>
+                    <li class="sugerencias__elemento">
+                        <h3 class="sugerencias__nombre">Plato equilibrado</h3>
+                        <p class="sugerencias__datos">20 min · 1,30 € por ración</p>
+                        <a class="sugerencias__enlace" href="recetas.html">Ver receta</a>
                     </li>
-                    <li>
-                        <hgroup>
-                            <h3>Cena reconfortante</h3>
-                            <p>25 min · 1,10 € por ración</p>
-                        </hgroup>
-                        <a href="recetas.html">Ver receta</a>
+                    <li class="sugerencias__elemento">
+                        <h3 class="sugerencias__nombre">Cena reconfortante</h3>
+                        <p class="sugerencias__datos">25 min · 1,10 € por ración</p>
+                        <a class="sugerencias__enlace" href="recetas.html">Ver receta</a>
                     </li>
                 </ul>
             </section>
 
-            <section aria-labelledby="titulo-despensa">
-                <h2 id="titulo-despensa">Tu despensa</h2>
-                <p>3 ingredientes caducan en 48 h.</p>
-                <p><a href="ingredientes.html">Ver ingredientes</a></p>
+            <section class="despensa">
+                <h2 class="despensa__titulo">Tu despensa</h2>
+                <p class="despensa__aviso">3 ingredientes caducan en 48 h.</p>
+                <p class="despensa__acciones"><a class="despensa__enlace" href="ingredientes.html">Ver ingredientes</a></p>
             </section>
-        </aside>
+        </div>
     </main>
 
-    <footer class="sidebar-footer">
-        <p>Irene Flores</p>
-        <p><a href="#">Ajustes</a></p>
+    <footer class="pie-lateral">
+        <p class="pie-lateral__autor">Irene Flores</p>
+        <p class="pie-lateral__ajustes"><a class="pie-lateral__enlace" href="#">Ajustes</a></p>
     </footer>
 
     <script type="module" src="js/main.js"></script>
