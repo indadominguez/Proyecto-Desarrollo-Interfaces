@@ -8,54 +8,46 @@
 </head>
 <body data-page="recetas">
 
-    <header class="sidebar">
-        <p class="sidebar-brand">EatBens</p>
+    <header class="barra-lateral">
+        <p class="barra-lateral__marca">EatBens</p>
 
-        <nav class="sidebar-nav" aria-label="Navegación principal">
-            <ul class="sidebar-menu">
-                <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
+        <nav class="barra-lateral__navegacion" aria-label="Navegación principal">
+            <ul class="barra-lateral__menu">
+                <li><a href="index.html" class="barra-lateral__enlace">Inicio</a></li>
+                <li><a href="ingredientes.html" class="barra-lateral__enlace">Ingredientes</a></li>
+                <li><a href="recetas.html" class="barra-lateral__enlace">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="barra-lateral__enlace">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content catalogo">
-        <header class="page-header">
-            <hgroup>
-                <h1>Recetas</h1>
-                <p>Explora el catálogo y consulta el tiempo, el coste y los ingredientes de cada plato.</p>
-            </hgroup>
+    <main class="contenido-principal contenido-principal--catalogo">
+        <header class="cabecera-pagina">
+            <h1 class="cabecera-pagina__titulo">Recetas</h1>
+            <p class="cabecera-pagina__subtitulo">Explora el catálogo y consulta el tiempo, el coste y los ingredientes de cada plato.</p>
         </header>
 
-        <section class="listing" aria-labelledby="titulo-listado-recetas">
-            <header>
-                <h2 id="titulo-listado-recetas">Catálogo de recetas</h2>
-                <p>Pulsa una receta para ver su ficha completa.</p>
+        <section class="listado">
+            <header class="listado__cabecera">
+                <h2 class="listado__titulo">Catálogo de recetas</h2>
+                <p class="listado__ayuda">Pulsa una receta para ver su ficha completa.</p>
             </header>
 
-            <ul class="card-grid" id="listado-recetas"></ul>
+            <ul class="listado__rejilla" id="listado-recetas"></ul>
         </section>
 
-        <aside
-            class="detail-panel"
-            id="detalle-receta"
-            tabindex="-1"
-            aria-labelledby="titulo-detalle-receta"
-            aria-live="polite"
-        >
-            <header>
-                <p class="detalle__eyebrow">Detalle</p>
-                <h2 class="detalle__titulo" id="titulo-detalle-receta">Ficha de la receta</h2>
+        <section class="panel-detalle" id="detalle-receta">
+            <header class="panel-detalle__cabecera">
+                <p class="panel-detalle__antetitulo">Detalle</p>
+                <h2 class="panel-detalle__titulo">Ficha de la receta</h2>
             </header>
-            <p>Selecciona una receta del catálogo para consultar sus datos y los ingredientes que necesitas.</p>
-        </aside>
+            <p class="panel-detalle__ayuda">Selecciona una receta del catálogo para consultar sus datos y los ingredientes que necesitas.</p>
+        </section>
     </main>
 
-    <footer class="sidebar-footer">
-        <p>Irene Flores</p>
-        <p><a href="#">Ajustes</a></p>
+    <footer class="pie-lateral">
+        <p class="pie-lateral__autor">Irene Flores</p>
+        <p class="pie-lateral__ajustes"><a class="pie-lateral__enlace" href="#">Ajustes</a></p>
     </footer>
 
     <script type="module" src="js/main.js"></script>

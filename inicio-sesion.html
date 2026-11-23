@@ -8,39 +8,45 @@
 </head>
 <body data-page="inicio-sesion">
 
-    <header class="sidebar">
-        <p class="sidebar-brand">EatBens</p>
+    <header class="barra-lateral">
+        <p class="barra-lateral__marca">EatBens</p>
 
-        <nav class="sidebar-nav" aria-label="Navegación principal">
-            <ul class="sidebar-menu">
-                <li><a href="index.html" class="sidebar-link">Inicio</a></li>
-                <li><a href="ingredientes.html" class="sidebar-link">Ingredientes</a></li>
-                <li><a href="recetas.html" class="sidebar-link">Recetas</a></li>
-                <li><a href="inicio-sesion.html" class="sidebar-link">Inicio de sesión</a></li>
+        <nav class="barra-lateral__navegacion" aria-label="Navegación principal">
+            <ul class="barra-lateral__menu">
+                <li><a href="index.html" class="barra-lateral__enlace">Inicio</a></li>
+                <li><a href="ingredientes.html" class="barra-lateral__enlace">Ingredientes</a></li>
+                <li><a href="recetas.html" class="barra-lateral__enlace">Recetas</a></li>
+                <li><a href="inicio-sesion.html" class="barra-lateral__enlace">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
-        <header class="page-header">
-            <hgroup>
-                <h1>Inicio de sesión</h1>
-                <p>Accede a tu cuenta para guardar recetas y sincronizar tu planificación.</p>
-            </hgroup>
+    <main class="contenido-principal">
+        <header class="cabecera-pagina">
+            <h1 class="cabecera-pagina__titulo">Inicio de sesión</h1>
+            <p class="cabecera-pagina__subtitulo">Accede a tu cuenta para guardar recetas y sincronizar tu planificación.</p>
         </header>
 
-        <section class="panel" aria-labelledby="titulo-formulario-acceso">
-            <h2 id="titulo-formulario-acceso">Formulario de acceso</h2>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Datos de acceso</legend>
-                    <p>
-                        <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" name="correo" autocomplete="email" required>
-                    </p>
-                    <p>
-                        <label for="contrasena">Contraseña</label>
+        <section class="formulario-acceso">
+            <h2 class="formulario-acceso__titulo">Formulario de acceso</h2>
+            <form class="formulario-acceso__formulario" action="#" method="post">
+                <fieldset class="formulario-acceso__grupo">
+                    <legend class="formulario-acceso__leyenda">Datos de acceso</legend>
+                    <p class="formulario-acceso__campo">
+                        <label class="formulario-acceso__etiqueta" for="correo">Correo electrónico</label>
                         <input
+                            class="formulario-acceso__control"
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+                    <p class="formulario-acceso__campo">
+                        <label class="formulario-acceso__etiqueta" for="contrasena">Contraseña</label>
+                        <input
+                            class="formulario-acceso__control"
                             type="password"
                             id="contrasena"
                             name="contrasena"
@@ -49,18 +55,18 @@
                         >
                     </p>
                 </fieldset>
-                <p><button type="submit">Entrar</button></p>
+                <p class="formulario-acceso__acciones"><button class="formulario-acceso__boton" type="submit">Entrar</button></p>
             </form>
-            <p>
+            <p class="formulario-acceso__nota">
                 El formulario ya tiene la estructura semántica; la conexión con el sistema de acceso
                 se implementará en la siguiente fase.
             </p>
         </section>
     </main>
 
-    <footer class="sidebar-footer">
-        <p>Irene Flores</p>
-        <p><a href="#">Ajustes</a></p>
+    <footer class="pie-lateral">
+        <p class="pie-lateral__autor">Irene Flores</p>
+        <p class="pie-lateral__ajustes"><a class="pie-lateral__enlace" href="#">Ajustes</a></p>
     </footer>
 
     <script type="module" src="js/main.js"></script>
