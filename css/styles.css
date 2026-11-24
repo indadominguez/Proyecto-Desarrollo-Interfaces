@@ -658,6 +658,79 @@ body {
 }
 
 /* =========================================
+   LISTADO DE MENSAJES
+   ========================================= */
+.mensajes__elemento {
+    min-width: 0;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 0.0625rem solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: var(--fondo-cuerpo);
+}
+
+.mensaje__cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+}
+
+.mensaje__nombre,
+.mensaje__fecha,
+.mensaje__texto,
+.mensaje__acciones {
+    margin: 0;
+}
+
+.mensaje__fecha {
+    font-size: 0.85rem;
+    color: var(--texto-secundario);
+}
+
+.mensaje__datos {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.25rem 1rem;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.mensaje__datos dt {
+    font-weight: 600;
+}
+
+.mensaje__datos dd {
+    margin: 0;
+}
+
+.mensaje__texto {
+    white-space: pre-wrap;
+}
+
+.mensaje__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.mensaje__boton {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.mensajes__estado {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+}
+
+/* =========================================
    BOTONES
    ========================================= */
 button {

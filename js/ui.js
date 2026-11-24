@@ -174,10 +174,95 @@ function crearElementoUsuario(usuario) {
     return elemento;
 }
 
+function formatearFechaHora(fechaISO) {
+    const fecha = new Date(fechaISO);
+
+    if (Number.isNaN(fecha.getTime())) {
+        return "Fecha no disponible";
+    }
+
+    return fecha.toLocaleString("es-ES", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+    });
+}
+
+function crearElementoMensaje(mensaje) {
+    const elemento = document.createElement("li");
+    elemento.classList.add("mensajes__elemento");
+
+    const articulo = document.createElement("article");
+    articulo.classList.add("mensaje");
+    articulo.dataset.id = mensaje.id;
+
+    const cabecera = document.createElement("header");
+    cabecera.classList.add("mensaje__cabecera");
+
+    const nombre = document.createElement("h3");
+    nombre.classList.add("mensaje__nombre");
+    nombre.textContent = mensaje.nombre;
+
+    const fecha = document.createElement("p");
+    fecha.classList.add("mensaje__fecha");
+    fecha.textContent = formatearFechaHora(mensaje.enviadoEn);
+
+    cabecera.append(nombre, fecha);
+
+    const datos = document.createElement("dl");
+    datos.classList.add("mensaje__datos");
+
+    const agregarDato = (etiqueta, valor) => {
+        const termino = document.createElement("dt");
+        termino.textContent = etiqueta;
+
+        const definicion = document.createElement("dd");
+        definicion.textContent = valor;
+
+        datos.append(termino, definicion);
+    };
+
+    agregarDato("Correo", mensaje.correo);
+
+    if (mensaje.telefono) {
+        agregarDato("Teléfono", mensaje.telefono);
+    }
+
+    agregarDato("Motivo", mensaje.motivoTexto || mensaje.motivo);
+    agregarDato(
+        "Respuesta",
+        mensaje.preferenciaLlamada
+            ? "Prefiere que le llamen"
+            : "Prefiere correo electrónico"
+    );
+
+    const texto = document.createElement("p");
+    texto.classList.add("mensaje__texto");
+    texto.textContent = mensaje.mensaje;
+
+    const acciones = document.createElement("p");
+    acciones.classList.add("mensaje__acciones");
+
+    const botonBorrar = document.createElement("button");
+    botonBorrar.type = "button";
+    botonBorrar.classList.add("mensaje__boton");
+    botonBorrar.dataset.accion = "borrar";
+    botonBorrar.textContent = "Borrar";
+
+    acciones.append(botonBorrar);
+    articulo.append(cabecera, datos, texto, acciones);
+    elemento.append(articulo);
+
+    return elemento;
+}
+
 export {
     crearTarjetaIngrediente,
     crearTarjetaReceta,
     crearDetalleIngrediente,
     crearDetalleReceta,
-    crearElementoUsuario
+    crearElementoUsuario,
+    crearElementoMensaje
 };

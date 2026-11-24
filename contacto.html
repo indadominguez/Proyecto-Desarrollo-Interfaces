@@ -77,7 +77,7 @@
                             name="telefono"
                             autocomplete="tel"
                             inputmode="tel"
-                            maxlength="15"
+                            maxlength="20"
                         >
                         <span class="formulario-contacto__ayuda-campo" id="ayuda-contacto-telefono">Opcional, salvo que marques «Prefiero que me llaméis».</span>
                         <span class="formulario-contacto__error" id="error-contacto-telefono" aria-live="polite"></span>
@@ -130,7 +130,7 @@
                             maxlength="600"
                             required
                         ></textarea>
-                        <span class="formulario-contacto__contador" id="contador-contacto-mensaje" aria-live="polite">0 / 600 caracteres</span>
+                        <span class="formulario-contacto__contador" id="contador-contacto-mensaje" aria-live="polite">0 / 600 caracteres · mínimo 20</span>
                         <span class="formulario-contacto__error" id="error-contacto-mensaje" aria-live="polite"></span>
                     </p>
                 </fieldset>
@@ -153,6 +153,7 @@
 
             <p class="mensajes__vacio" id="mensajes-vacio">Todavía no has enviado ningún mensaje.</p>
             <ul class="mensajes__lista" id="listado-mensajes"></ul>
+            <p class="mensajes__estado" id="estado-mensajes" role="status"></p>
         </section>
     </main>
 

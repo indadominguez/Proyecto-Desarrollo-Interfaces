@@ -6,6 +6,7 @@ const EXPRESION_CORREO = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
 const EXPRESION_USUARIO = /^[\p{L}\p{N}._-]+$/u;
 const EXPRESION_MAYUSCULA = /[A-ZÁÉÍÓÚÜÑ]/;
 const EXPRESION_NUMERO = /\d/;
+const EXPRESION_TELEFONO = /^(?:\+34|0034)?[6-9]\d{8}$/;
 
 function validarRequerido(valor, etiqueta = "Este campo") {
     const vacio = typeof valor === "boolean"
@@ -43,6 +44,16 @@ function validarEmail(valor) {
     return EXPRESION_CORREO.test(String(valor))
         ? null
         : "Introduce un correo electrónico válido.";
+}
+
+function validarTelefono(valor) {
+    if (!valor) return null;
+
+    const telefono = String(valor).replace(/[\s().-]/g, "");
+
+    return EXPRESION_TELEFONO.test(telefono)
+        ? null
+        : "Introduce un teléfono válido de 9 dígitos (puedes incluir +34).";
 }
 
 function validarContrasena(valor) {
@@ -108,6 +119,7 @@ export {
     validarLongitud,
     validarUsuario,
     validarEmail,
+    validarTelefono,
     validarContrasena,
     validarRepeticion,
     validarFechaNacimiento,
