@@ -107,9 +107,77 @@ function crearDetalleReceta(receta, listaIngredientes) {
     return contenedor;
 }
 
+function formatearFecha(fechaISO) {
+    const fecha = new Date(`${fechaISO}T00:00:00`);
+
+    if (Number.isNaN(fecha.getTime())) {
+        return "Fecha no disponible";
+    }
+
+    return fecha.toLocaleDateString("es-ES", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    });
+}
+
+function crearElementoUsuario(usuario) {
+    const elemento = document.createElement("li");
+    elemento.classList.add("usuarios__elemento");
+
+    const articulo = document.createElement("article");
+    articulo.classList.add("usuario");
+    articulo.dataset.id = usuario.id;
+
+    const cabecera = document.createElement("header");
+    cabecera.classList.add("usuario__cabecera");
+
+    const nombre = document.createElement("h3");
+    nombre.classList.add("usuario__nombre");
+    nombre.textContent = usuario.usuario;
+
+    const correo = document.createElement("p");
+    correo.classList.add("usuario__correo");
+    correo.textContent = usuario.correo;
+
+    cabecera.append(nombre, correo);
+
+    const nacimiento = document.createElement("p");
+    nacimiento.classList.add("usuario__nacimiento");
+    nacimiento.textContent = `Fecha de nacimiento: ${formatearFecha(usuario.fechaNacimiento)}`;
+
+    const condiciones = document.createElement("p");
+    condiciones.classList.add("usuario__condiciones");
+    condiciones.textContent = usuario.condiciones
+        ? "Condiciones aceptadas"
+        : "Condiciones pendientes";
+
+    const acciones = document.createElement("p");
+    acciones.classList.add("usuario__acciones");
+
+    const botonEditar = document.createElement("button");
+    botonEditar.type = "button";
+    botonEditar.classList.add("usuario__boton");
+    botonEditar.dataset.accion = "editar";
+    botonEditar.textContent = "Editar";
+
+    const botonBorrar = document.createElement("button");
+    botonBorrar.type = "button";
+    botonBorrar.classList.add("usuario__boton", "usuario__boton--borrar");
+    botonBorrar.dataset.accion = "borrar";
+    botonBorrar.textContent = "Borrar";
+
+    acciones.append(botonEditar, botonBorrar);
+    articulo.append(cabecera, nacimiento, condiciones, acciones);
+    elemento.append(articulo);
+
+    return elemento;
+}
+
 export {
     crearTarjetaIngrediente,
     crearTarjetaReceta,
     crearDetalleIngrediente,
-    crearDetalleReceta
+    crearDetalleReceta,
+    crearElementoUsuario
 };

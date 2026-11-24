@@ -8,6 +8,7 @@ Los colores son todos de prueba
 
     --texto-principal: #333333;
     --texto-secundario: #666666;
+    --color-error: #b42318;
 
     --fondo-resaltado: #ececee;
     --fondo-activo: #e4e4e7;
@@ -21,6 +22,10 @@ Los colores son todos de prueba
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
 }
 
 body {
@@ -189,6 +194,47 @@ body {
 
 .contenido-complementario > * + * {
     margin-top: 1rem;
+}
+
+/* =========================================
+   BIENVENIDA / ACCESO RÁPIDO
+   ========================================= */
+.bienvenida {
+    padding: 1rem 1.25rem;
+    border: 0.0625rem solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: #ffffff;
+}
+
+.bienvenida__texto {
+    color: var(--texto-secundario);
+}
+
+.bienvenida__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.contenido-principal a.bienvenida__boton {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    border: 0.0625rem solid var(--texto-principal);
+    border-radius: var(--radio-pequeno);
+    background-color: var(--texto-principal);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contenido-principal a.bienvenida__boton:hover {
+    background-color: #111111;
+}
+
+.contenido-principal a.bienvenida__boton:focus-visible {
+    outline: 0.125rem solid var(--texto-principal);
+    outline-offset: 0.125rem;
 }
 
 /* =========================================
@@ -403,6 +449,212 @@ body {
 
 .formulario-acceso__boton {
     margin-top: 0.75rem;
+}
+
+/* =========================================
+   FORMULARIOS DE REGISTRO Y CONTACTO
+   ========================================= */
+.formulario-registro,
+.formulario-contacto,
+.usuarios,
+.mensajes {
+    max-width: 42rem;
+    padding: 1.5rem;
+    border: 0.0625rem solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: #ffffff;
+}
+
+.formulario-registro__formulario,
+.formulario-contacto__formulario {
+    margin-top: 1rem;
+}
+
+.formulario-registro__grupo,
+.formulario-contacto__grupo {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0 0 1rem;
+    padding: 0;
+    border: 0;
+}
+
+.formulario-registro__leyenda,
+.formulario-contacto__leyenda {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.formulario-registro__campo,
+.formulario-contacto__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0;
+}
+
+.formulario-registro__campo--casilla,
+.formulario-contacto__campo--casilla {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.25rem 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.formulario-registro__campo--casilla .formulario-registro__error,
+.formulario-contacto__campo--casilla .formulario-contacto__error {
+    grid-column: 1 / -1;
+}
+
+.formulario-registro__control,
+.formulario-contacto__control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.0625rem solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: #ffffff;
+    color: var(--texto-principal);
+    font: inherit;
+}
+
+.formulario-registro__control:focus-visible,
+.formulario-contacto__control:focus-visible {
+    outline: 0.125rem solid var(--texto-principal);
+    outline-offset: 0.125rem;
+}
+
+.formulario-registro__control[aria-invalid="true"],
+.formulario-contacto__control[aria-invalid="true"] {
+    border-color: var(--color-error);
+}
+
+.formulario-registro__casilla[aria-invalid="true"],
+.formulario-contacto__casilla[aria-invalid="true"] {
+    outline: 0.125rem solid var(--color-error);
+    outline-offset: 0.125rem;
+}
+
+.formulario-contacto__control--mensaje {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.formulario-registro__ayuda-campo,
+.formulario-contacto__ayuda-campo,
+.formulario-contacto__contador {
+    font-size: 0.8rem;
+    color: var(--texto-secundario);
+}
+
+.formulario-contacto__contador {
+    align-self: flex-end;
+}
+
+.formulario-registro__error,
+.formulario-contacto__error {
+    min-height: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.formulario-registro__acciones,
+.formulario-contacto__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.formulario-registro__estado,
+.formulario-contacto__estado,
+.formulario-registro__modo {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+}
+
+.formulario-registro__modo:not([hidden]) {
+    padding: 0.5rem 0.75rem;
+    border: 0.0625rem solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: var(--fondo-resaltado);
+}
+
+.formulario-registro__ayuda,
+.formulario-contacto__ayuda,
+.formulario-registro__nota,
+.formulario-contacto__nota,
+.usuarios__ayuda,
+.mensajes__ayuda,
+.usuarios__vacio,
+.mensajes__vacio {
+    color: var(--texto-secundario);
+}
+
+.formulario-registro__nota,
+.formulario-contacto__nota {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+/* =========================================
+   LISTADO DE USUARIOS
+   ========================================= */
+.usuarios__lista,
+.mensajes__lista {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.usuarios__elemento {
+    min-width: 0;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 0.0625rem solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: var(--fondo-cuerpo);
+}
+
+.usuario__cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+}
+
+.usuario__nombre,
+.usuario__correo,
+.usuario__nacimiento,
+.usuario__condiciones,
+.usuario__acciones {
+    margin: 0;
+}
+
+.usuario__correo,
+.usuario__nacimiento,
+.usuario__condiciones {
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+}
+
+.usuario__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.usuario__boton--borrar {
+    color: var(--color-error);
+    border-color: var(--color-error);
 }
 
 /* =========================================

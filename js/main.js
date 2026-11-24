@@ -7,6 +7,7 @@ import {
     crearDetalleIngrediente,
     crearDetalleReceta
 } from "./ui.js";
+import { iniciarRegistro } from "./registro.js";
 
 // Selectores
 const listadoIngredientes = document.querySelector("#listado-ingredientes");
@@ -116,6 +117,8 @@ function iniciarPagina() {
         pintarIngredientes(ingredientes);
     } else if (pagina === "recetas") {
         pintarRecetas(recetas);
+    } else if (pagina === "registro") {
+        iniciarRegistro();
     }
 }
 
