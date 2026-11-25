@@ -95,8 +95,7 @@ function iniciarContacto() {
     rellenarDesdeCookie();
     sincronizarPreferencia();
     actualizarContador();
-    mostrarError(controles.telefono, null);
-    mostrarError(controles.mensaje, null);
+    limpiarErrores();
     pintarMensajes();
 }
 
@@ -201,10 +200,11 @@ function mostrarError(campo, mensaje) {
 
     campo.setAttribute("aria-invalid", mensaje ? "true" : "false");
 
+    // aria-describedby siempre apunta a la ayuda, al contador y al error del campo.
     const descritos = [];
     if (ayuda) descritos.push(ayuda.id);
     if (campo === controles.mensaje && contador) descritos.push(contador.id);
-    if (mensaje && contenedorError) descritos.push(contenedorError.id);
+    if (contenedorError) descritos.push(contenedorError.id);
 
     if (descritos.length) {
         campo.setAttribute("aria-describedby", descritos.join(" "));
@@ -236,7 +236,6 @@ function sincronizarPreferencia() {
     const obligatorio = controles.preferencia.checked;
 
     controles.telefono.required = obligatorio;
-    controles.telefono.setAttribute("aria-required", String(obligatorio));
 
     if (ayudaTelefono) {
         ayudaTelefono.textContent = obligatorio

@@ -160,12 +160,14 @@ function crearElementoUsuario(usuario) {
     botonEditar.classList.add("usuario__boton");
     botonEditar.dataset.accion = "editar";
     botonEditar.textContent = "Editar";
+    botonEditar.setAttribute("aria-label", `Editar la cuenta de ${usuario.usuario}`);
 
     const botonBorrar = document.createElement("button");
     botonBorrar.type = "button";
     botonBorrar.classList.add("usuario__boton", "usuario__boton--borrar");
     botonBorrar.dataset.accion = "borrar";
     botonBorrar.textContent = "Borrar";
+    botonBorrar.setAttribute("aria-label", `Borrar la cuenta de ${usuario.usuario}`);
 
     acciones.append(botonEditar, botonBorrar);
     articulo.append(cabecera, nacimiento, condiciones, acciones);
@@ -250,6 +252,7 @@ function crearElementoMensaje(mensaje) {
     botonBorrar.classList.add("mensaje__boton");
     botonBorrar.dataset.accion = "borrar";
     botonBorrar.textContent = "Borrar";
+    botonBorrar.setAttribute("aria-label", `Borrar el mensaje de ${mensaje.nombre}`);
 
     acciones.append(botonBorrar);
     articulo.append(cabecera, datos, texto, acciones);

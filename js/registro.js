@@ -91,6 +91,7 @@ function iniciarRegistro() {
 
     listado.addEventListener("click", manejarAccionUsuario);
 
+    limpiarErrores();
     pintarUsuarios();
 }
 
@@ -206,9 +207,10 @@ function mostrarError(campo, mensaje) {
 
     campo.setAttribute("aria-invalid", mensaje ? "true" : "false");
 
+    // aria-describedby siempre apunta a la ayuda y al error del campo.
     const descritos = [];
     if (ayuda) descritos.push(ayuda.id);
-    if (mensaje && contenedorError) descritos.push(contenedorError.id);
+    if (contenedorError) descritos.push(contenedorError.id);
 
     if (descritos.length) {
         campo.setAttribute("aria-describedby", descritos.join(" "));
