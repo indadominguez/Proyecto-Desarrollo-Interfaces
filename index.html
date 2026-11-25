@@ -16,7 +16,9 @@
                 <li><a href="index.html" class="barra-lateral__enlace">Inicio</a></li>
                 <li><a href="ingredientes.html" class="barra-lateral__enlace">Ingredientes</a></li>
                 <li><a href="recetas.html" class="barra-lateral__enlace">Recetas</a></li>
+                <li><a href="registro.html" class="barra-lateral__enlace">Registro</a></li>
                 <li><a href="inicio-sesion.html" class="barra-lateral__enlace">Inicio de sesión</a></li>
+                <li><a href="contacto.html" class="barra-lateral__enlace">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -27,11 +29,22 @@
             <p class="cabecera-pagina__subtitulo">Elige cuánto quieres gastar y te proponemos una receta.</p>
         </header>
 
+        <section class="bienvenida" aria-labelledby="titulo-bienvenida">
+            <h2 class="bienvenida__titulo" id="titulo-bienvenida">Tu cuenta en EatBens</h2>
+            <p class="bienvenida__texto">Crea tu cuenta para guardar tus recetas favoritas y sincronizar tu planificación semanal.</p>
+            <p class="bienvenida__acciones">
+                <a class="bienvenida__boton" href="registro.html">Crear cuenta</a>
+                <a class="bienvenida__enlace" href="inicio-sesion.html">Ya tengo cuenta</a>
+            </p>
+        </section>
+
         <section class="presupuesto">
             <h2 class="presupuesto__titulo">Presupuesto por ración</h2>
             <ul class="presupuesto__opciones">
-                <li><button type="button">Sin límite</button></li>
-                <li><button type="button">Ahorro: hasta 1,50 €</button></li>
+                <li>
+                    <button type="button">Sin límite</button></li>
+                <li>
+                    <button type="button">Ahorro: hasta 1,50 €</button></li>
             </ul>
             <p class="presupuesto__estado">Te quedan 12,50 € hoy para 3 comidas.</p>
         </section>
@@ -49,11 +62,12 @@
             </p>
         </article>
 
-        <div class="contenido-complementario">
+        <aside class="contenido-complementario">
             <section class="resumen-semana">
                 <h2 class="resumen-semana__titulo">Esta semana</h2>
                 <p class="resumen-semana__datos">Semana 42 · 14 raciones programadas</p>
-                <p class="resumen-semana__acciones"><button type="button">Ver plan semanal</button></p>
+                <p class="resumen-semana__acciones">
+                    <button type="button">Ver plan semanal</button></p>
             </section>
 
             <section class="sugerencias">
@@ -82,7 +96,7 @@
                 <p class="despensa__aviso">3 ingredientes caducan en 48 h.</p>
                 <p class="despensa__acciones"><a class="despensa__enlace" href="ingredientes.html">Ver ingredientes</a></p>
             </section>
-        </div>
+        </aside>
     </main>
 
     <footer class="pie-lateral">

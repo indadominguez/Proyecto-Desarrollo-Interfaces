@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro · EatBens</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="registro">
+
+    <header class="barra-lateral">
+        <p class="barra-lateral__marca">EatBens</p>
+
+        <nav class="barra-lateral__navegacion" aria-label="Navegación principal">
+            <ul class="barra-lateral__menu">
+                <li><a href="index.html" class="barra-lateral__enlace">Inicio</a></li>
+                <li><a href="ingredientes.html" class="barra-lateral__enlace">Ingredientes</a></li>
+                <li><a href="recetas.html" class="barra-lateral__enlace">Recetas</a></li>
+                <li><a href="registro.html" class="barra-lateral__enlace">Registro</a></li>
+                <li><a href="inicio-sesion.html" class="barra-lateral__enlace">Inicio de sesión</a></li>
+                <li><a href="contacto.html" class="barra-lateral__enlace">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <header class="cabecera-pagina">
+            <h1 class="cabecera-pagina__titulo">Registro</h1>
+            <p class="cabecera-pagina__subtitulo">Crea tu cuenta para guardar tus recetas favoritas y sincronizar tu planificación semanal.</p>
+        </header>
+
+        <section class="formulario-registro" aria-labelledby="titulo-registro">
+            <header class="formulario-registro__cabecera">
+                <h2 class="formulario-registro__titulo" id="titulo-registro">Crear una cuenta</h2>
+                <p class="formulario-registro__ayuda">Regístrate para guardar tus recetas favoritas y sincronizar tu planificación semanal.</p>
+            </header>
+
+            <form class="formulario-registro__formulario" id="formulario-registro" action="#" method="post" novalidate>
+                <!-- Identificador vacío al crear; con valor, el mismo formulario edita un usuario existente. -->
+                <input type="hidden" id="registro-id" name="id" value="">
+                <p class="formulario-registro__modo" id="registro-modo" role="status" hidden></p>
+
+                <fieldset class="formulario-registro__grupo">
+                    <legend class="formulario-registro__leyenda">Datos de la cuenta</legend>
+
+                    <p class="formulario-registro__campo">
+                        <label class="formulario-registro__etiqueta" for="registro-usuario">Nombre de usuario</label>
+                        <input
+                            class="formulario-registro__control"
+                            type="text"
+                            id="registro-usuario"
+                            name="usuario"
+                            autocomplete="username"
+                            minlength="3"
+                            maxlength="20"
+                            required
+                        >
+                        <span class="formulario-registro__error" id="error-registro-usuario"></span>
+                    </p>
+
+                    <p class="formulario-registro__campo">
+                        <label class="formulario-registro__etiqueta" for="registro-correo">Correo electrónico</label>
+                        <input
+                            class="formulario-registro__control"
+                            type="email"
+                            id="registro-correo"
+                            name="correo"
+                            autocomplete="email"
+                            maxlength="120"
+                            required
+                        >
+                        <span class="formulario-registro__error" id="error-registro-correo"></span>
+                    </p>
+                </fieldset>
+
+                <fieldset class="formulario-registro__grupo" id="registro-seguridad">
+                    <legend class="formulario-registro__leyenda">Contraseña</legend>
+
+                    <p class="formulario-registro__campo">
+                        <label class="formulario-registro__etiqueta" for="registro-contrasena">Contraseña</label>
+                        <input
+                            class="formulario-registro__control"
+                            type="password"
+                            id="registro-contrasena"
+                            name="contrasena"
+                            autocomplete="new-password"
+                            minlength="8"
+                            maxlength="64"
+                            required
+                        >
+                        <span class="formulario-registro__ayuda-campo" id="ayuda-registro-contrasena">Al menos 8 caracteres, una mayúscula y un número.</span>
+                        <span class="formulario-registro__error" id="error-registro-contrasena"></span>
+                    </p>
+
+                    <p class="formulario-registro__campo">
+                        <label class="formulario-registro__etiqueta" for="registro-contrasena-repetida">Repetir contraseña</label>
+                        <input
+                            class="formulario-registro__control"
+                            type="password"
+                            id="registro-contrasena-repetida"
+                            name="contrasenaRepetida"
+                            autocomplete="new-password"
+                            minlength="8"
+                            maxlength="64"
+                            required
+                        >
+                        <span class="formulario-registro__error" id="error-registro-contrasena-repetida"></span>
+                    </p>
+                </fieldset>
+
+                <fieldset class="formulario-registro__grupo">
+                    <legend class="formulario-registro__leyenda">Datos personales</legend>
+
+                    <p class="formulario-registro__campo">
+                        <label class="formulario-registro__etiqueta" for="registro-nacimiento">Fecha de nacimiento</label>
+                        <!-- Edad mínima: 14 años (a 25/11/2026). El JavaScript lee este max y vuelve a comprobar la fecha. -->
+                        <input
+                            class="formulario-registro__control"
+                            type="date"
+                            id="registro-nacimiento"
+                            name="fechaNacimiento"
+                            autocomplete="bday"
+                            min="1900-01-01"
+                            max="2012-11-25"
+                            required
+                        >
+                        <span class="formulario-registro__ayuda-campo" id="ayuda-registro-nacimiento">Debes tener al menos 14 años.</span>
+                        <span class="formulario-registro__error" id="error-registro-nacimiento"></span>
+                    </p>
+                </fieldset>
+
+                <p class="formulario-registro__campo formulario-registro__campo--casilla">
+                    <input
+                        class="formulario-registro__casilla"
+                        type="checkbox"
+                        id="registro-condiciones"
+                        name="condiciones"
+                        required
+                    >
+                    <label class="formulario-registro__etiqueta" for="registro-condiciones">Acepto las condiciones del servicio y la política de privacidad.</label>
+                    <span class="formulario-registro__error" id="error-registro-condiciones"></span>
+                </p>
+
+                <p class="formulario-registro__acciones">
+                    <button class="formulario-registro__boton" type="submit">Crear cuenta</button>
+                    <button class="formulario-registro__boton formulario-registro__boton--secundario" type="button" id="registro-cancelar" hidden>Cancelar edición</button>
+                </p>
+
+                <p class="formulario-registro__estado" id="estado-registro" role="status"></p>
+            </form>
+
+            <p class="formulario-registro__nota">
+                ¿Ya tienes una cuenta? <a href="inicio-sesion.html">Inicia sesión</a>.
+            </p>
+        </section>
+
+        <section class="usuarios" aria-labelledby="titulo-usuarios">
+            <header class="usuarios__cabecera">
+                <h2 class="usuarios__titulo" id="titulo-usuarios">Usuarios registrados</h2>
+                <p class="usuarios__ayuda">Consulta, edita o elimina las cuentas creadas en este navegador.</p>
+            </header>
+
+            <p class="usuarios__vacio" id="usuarios-vacio">Todavía no hay usuarios registrados.</p>
+            <ul class="usuarios__lista" id="listado-usuarios"></ul>
+        </section>
+    </main>
+
+    <footer class="pie-lateral">
+        <p class="pie-lateral__autor">Irene Flores</p>
+        <p class="pie-lateral__ajustes"><a class="pie-lateral__enlace" href="#">Ajustes</a></p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
