@@ -1,13 +1,7 @@
 // js/registro.js
 // Formulario de registro de usuarios y vista «Usuarios registrados».
 
-import {
-    obtenerTodos,
-    obtenerPorId,
-    crear,
-    actualizar,
-    borrar
-} from "./almacen.js";
+import { borrar } from "./almacen.js";
 import {
     validarRequerido,
     validarLongitud,
@@ -21,6 +15,35 @@ import {
 import { crearElementoUsuario } from "./ui.js";
 
 const COLECCION = "usuarios";
+const CLAVE = "eatbens:usuarios";
+
+function leerUsuarios() {
+    try {
+        const contenido = localStorage.getItem(CLAVE);
+        if (!contenido) return [];
+
+        const datos = JSON.parse(contenido);
+        return Array.isArray(datos) ? datos : [];
+    } catch {
+        return [];
+    }
+}
+
+function guardarUsuarios(usuarios) {
+    localStorage.setItem(CLAVE, JSON.stringify(usuarios));
+}
+
+function generarId() {
+    if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+        return crypto.randomUUID();
+    }
+
+    return `id-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function buscarUsuario(id) {
+    return leerUsuarios().find((usuario) => String(usuario.id) === String(id)) || null;
+}
 
 const controles = {
     usuario: null,
@@ -114,13 +137,27 @@ function manejarEnvio(evento) {
     };
 
     if (esEdicion) {
-        actualizar(COLECCION, idOculto.value, datos);
+        const usuarios = leerUsuarios();
+        const indice = usuarios.findIndex((usuario) => String(usuario.id) === String(idOculto.value));
+
+        if (indice !== -1) {
+            usuarios[indice] = {
+                ...usuarios[indice],
+                ...datos,
+                id: usuarios[indice].id
+            };
+            guardarUsuarios(usuarios);
+        }
     } else {
         // La contraseña se valida, pero no forma parte del dato guardado.
-        crear(COLECCION, {
+        const usuarios = leerUsuarios();
+
+        usuarios.push({
             ...datos,
+            id: generarId(),
             creadoEn: new Date().toISOString()
         });
+        guardarUsuarios(usuarios);
     }
 
     reiniciarFormulario();
@@ -244,7 +281,7 @@ function manejarAccionUsuario(evento) {
 }
 
 function cargarUsuario(id) {
-    const usuario = obtenerPorId(COLECCION, id);
+    const usuario = buscarUsuario(id);
     if (!usuario) return;
 
     idOculto.value = usuario.id;
@@ -269,7 +306,7 @@ function cargarUsuario(id) {
 }
 
 function eliminarUsuario(id) {
-    const usuario = obtenerPorId(COLECCION, id);
+    const usuario = buscarUsuario(id);
     if (!usuario) return;
 
     const confirmado = window.confirm(
@@ -291,7 +328,7 @@ function eliminarUsuario(id) {
 function pintarUsuarios() {
     if (!listado) return;
 
-    const usuarios = obtenerTodos(COLECCION);
+    const usuarios = leerUsuarios();
     listado.replaceChildren();
 
     usuarios.forEach((usuario) => {

@@ -1,12 +1,7 @@
 // js/contacto.js
 // Formulario de contacto y vista «Mensajes enviados».
 
-import {
-    obtenerTodos,
-    obtenerPorId,
-    crear,
-    borrar
-} from "./almacen.js";
+import { borrar } from "./almacen.js";
 import {
     validarRequerido,
     validarLongitud,
@@ -16,8 +11,37 @@ import {
 import { crearElementoMensaje } from "./ui.js";
 
 const COLECCION = "mensajes";
+const CLAVE = "eatbens:mensajes";
 const COOKIE_CONTACTO = "eatbens_ultimo_contacto";
 const DIAS_COOKIE = 365;
+
+function leerMensajes() {
+    try {
+        const contenido = localStorage.getItem(CLAVE);
+        if (!contenido) return [];
+
+        const datos = JSON.parse(contenido);
+        return Array.isArray(datos) ? datos : [];
+    } catch {
+        return [];
+    }
+}
+
+function guardarMensajes(mensajes) {
+    localStorage.setItem(CLAVE, JSON.stringify(mensajes));
+}
+
+function generarId() {
+    if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+        return crypto.randomUUID();
+    }
+
+    return `id-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function buscarMensaje(id) {
+    return leerMensajes().find((mensaje) => String(mensaje.id) === String(id)) || null;
+}
 
 const controles = {
     nombre: null,
@@ -121,7 +145,10 @@ function manejarEnvio(evento) {
         enviadoEn: new Date().toISOString()
     };
 
-    crear(COLECCION, mensaje);
+    const mensajes = leerMensajes();
+    mensajes.push({ ...mensaje, id: generarId() });
+    guardarMensajes(mensajes);
+
     guardarCookieContacto(mensaje.nombre, mensaje.correo);
 
     reiniciarFormulario();
@@ -303,7 +330,7 @@ function manejarAccionMensaje(evento) {
 }
 
 function eliminarMensaje(id) {
-    const mensaje = obtenerPorId(COLECCION, id);
+    const mensaje = buscarMensaje(id);
     if (!mensaje) return;
 
     const confirmado = window.confirm(
@@ -323,7 +350,7 @@ function eliminarMensaje(id) {
 function pintarMensajes() {
     if (!listado) return;
 
-    const mensajes = obtenerTodos(COLECCION).slice().reverse();
+    const mensajes = leerMensajes().slice().reverse();
     listado.replaceChildren();
 
     mensajes.forEach((mensaje) => {
